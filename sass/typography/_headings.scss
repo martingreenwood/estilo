@@ -1,0 +1,405 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: 600;
+}
+
+
+#masthead {
+
+	.site-branding {
+
+		h1 {
+			margin: 0;
+			position: relative;
+			width: 100%;
+
+			@include media ($small-screen-up) {
+				position: absolute;
+				width: auto;
+			}
+		}
+	}
+}
+
+
+// CONTENT GLOBAL
+#content {
+
+	#hashtag {
+
+		h3 {
+			text-transform: uppercase;
+			@include rem(font-size, 18px);
+			line-height: 1;
+		}
+	}
+
+	#slider {
+
+		.slides {
+
+			li {
+
+				.caption {
+					
+					h2 {
+						@include rem(font-size, 18px);
+						line-height: 1;
+						margin: 0;
+
+						@include media ($small-screen-up) {
+							@include rem(font-size, 28px);
+						}
+
+						@include media ($large-screen-up) {
+							@include rem(font-size, 34px);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// ABOUT US, ESTILO
+.about-us, .estilo, .contact {
+
+	#content {
+
+		#slider {
+
+			.slides {
+
+				li {
+
+					.caption {
+
+						h2 {
+							text-transform: uppercase;
+						}
+    				}
+				}
+			}
+		}
+
+		.entry-content {
+
+			header {
+
+				h1 {
+					text-transform: uppercase;
+					@include rem(font-size, 50px);
+					@include rem(margin, 0 0 30px 0);
+					line-height: 0.875;
+
+					@include media ($medium-screen-up) {
+						@include rem(font-size, 80px);
+					}
+
+					@include media ($large-screen-up) {
+						@include rem(font-size, 130px);
+					}
+				}
+			}
+
+			.copy {
+
+				.intro {
+
+					h2 {
+						@include rem(font-size, 18px);
+						line-height: 2.3;
+						border-bottom: 1px solid;
+						display: inline;
+						@include rem(padding-bottom, 4px);
+
+						@include media ($medium-screen-up) {
+							&:after {
+								content: " ";
+								@include rem(margin-bottom, 20px);
+								display: table;
+							}
+						}
+					}
+				}
+
+				.content {
+
+					h1 {
+						@include rem(font-size, 38px);
+						@include rem(margin, 0 0 15px 0);
+						@include rem(padding, 0 0 15px 0);
+						border-bottom: 1px solid #000000;
+						line-height: 1.2;
+					}
+				}
+
+				.location {
+
+					.block {
+
+						h2 {
+							@include rem(font-size, 24px);
+							@include rem(margin-bottom, 15px);
+							@include rem(padding-bottom, 15px);
+							border-bottom: 1px solid #000000;
+							line-height: 1;
+						}
+
+						.blurb {
+
+							h1, h2, h3, h4 {
+								padding: 0;
+								border: 0;
+								line-height: 1.2;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// HOMEPAGE
+.home {
+
+	#content {
+
+		#slider {
+
+			.slides {
+
+				li {
+
+					.caption {
+						
+						h2 {
+							@include rem(font-size, 30px);
+							line-height: 1;
+							margin: 0;
+							text-align: center;
+						    white-space: pre;
+
+						    @include media ($large-screen-up) {
+						    	@include rem(font-size, 44px);
+						    }
+						}
+					}
+				}
+			}
+		}
+
+		.entry-content {
+
+			header {
+
+				h1 {
+					@include rem(font-size, 24px);
+					@include rem(padding, 0 0 20px 0);
+					margin: 0;
+
+					&:after {
+						@include heading-line;
+					}
+				}
+			}
+		}
+	}
+}
+
+// ESTILO
+.estilo {
+
+	#content {
+
+		.entry-content {
+
+			.copy {
+
+				.feature, .source {
+
+					.range {
+
+						.product {
+
+							.product_category_title {
+								font-weight: 300;
+								line-height: 2;
+								margin: 0;
+							}
+						}
+
+						.intro {
+							
+							h2 {
+
+								border-bottom: 0;
+								@include rem(font-size, 24px);
+								@include rem(margin-bottom, 15px);
+								@include rem(padding-bottom, 15px);
+								display: inline-block;
+								position: inherit;
+								width: 100%;
+    							text-align: left;
+
+    							@include media ($medium-screen-up) {
+									text-align: center;
+									margin-right: -50%;
+    							}
+								
+								&:after {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+
+				.source {
+
+					.range {
+
+						.intro {
+							
+							h2 {
+								@include media ($medium-screen-up) {
+									right: auto;
+									margin-right: 0;
+									margin-left: -50%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// INSPIRATION
+.inspiration {
+
+	#inspiration-content {
+
+		.row {
+
+			.content {
+
+				.copy {
+
+					h2 {
+						border-bottom: 0;
+						@include rem(font-size, 24px);
+						@include rem(margin-bottom, 15px);
+
+							@include media ($medium-screen-up) {
+								text-align: center;
+								margin-left: -104.353%;
+							}
+					}
+				}
+
+				.inspire {
+
+					h3 {
+						display: inline-block;
+						margin: 0;
+						border-bottom: 1px solid black;
+						padding-bottom: 3px;
+						font-size: 19px;						
+					}
+				}
+			}
+
+			&:nth-child(even) {
+	
+				.content {
+
+					.copy {
+
+						h2 {
+
+							@include media ($medium-screen-up) {
+								margin-left: 0;
+								margin-right: -104.353%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#inspiration-products {
+
+		.row {
+
+			.product {
+
+				.product_category_title {
+					font-weight: 300;
+					margin: 0;
+					line-height: 2;						
+				}
+
+				header {
+
+					h3 {
+						display: inline-block;
+						margin: 0;
+						border-bottom: 1px solid black;
+						padding-bottom: 3px;
+						font-size: 19px;						
+					}
+				}
+			}
+		}
+	}
+}
+
+// NEWS
+.news {
+
+	#news-stories {
+
+		article {
+			
+			.entry-content {
+
+				.copy {
+
+					.blurb {
+
+						h1 {
+							margin-top: 0;
+							@include rem(margin-bottom, 20px);
+							@include rem(font-size, 24px);
+							text-align: left;
+							position: relative;
+
+							@include media ($medium-screen-up) {
+								text-align: center;
+								margin-right: -104.353%;
+							}
+						}
+					}
+
+					&.left {
+						
+						.blurb {
+
+							h1 {
+
+								@include media ($medium-screen-up) {
+									margin-right: 0;
+									margin-left: -104.353%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

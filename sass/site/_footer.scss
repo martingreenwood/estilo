@@ -1,0 +1,61 @@
+#colophon {
+	@include rem(margin-top, 60px);
+
+	@include rem(padding-left, 0);
+
+	@include media ($small-screen-up) {
+		@include rem(padding-left, 55px);
+	}
+
+	@include media ($large-screen-up) {
+		@include rem(padding-left, 75px);
+	}
+
+	.site-info {
+		@include row;
+
+		p {
+			@include rem(font-size, 16px);
+		}
+		
+		.copy {
+			@include span-columns(12);
+
+			@include media ($medium-screen-up) {
+				@include span-columns(4.5);
+			}
+			
+			hr {
+				width: 70px;
+				border-bottom: 2px solid #000;
+				background: transparent;
+			    margin: 0 0 30px;
+			}
+
+			p:first-of-type {
+				font-weight: 500;
+			}
+		}
+
+		.footer-logo {
+			float: right;
+			display: none;
+
+			@include media ($medium-screen-up) {
+				display: block;
+			}
+
+			a {
+				display: inline-block
+			}
+		}
+	}
+
+	#credit {
+		@include row;
+
+		p {
+			@include rem(font-size, 13px);
+		}
+	}
+}
