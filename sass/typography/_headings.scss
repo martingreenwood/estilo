@@ -38,22 +38,19 @@ h1, h2, h3, h4, h5, h6 {
 
 		.slides {
 
-			li {
+			.caption {
+				
+				h2 {
+					@include rem(font-size, 18px);
+					line-height: 1;
+					margin: 0;
 
-				.caption {
-					
-					h2 {
-						@include rem(font-size, 18px);
-						line-height: 1;
-						margin: 0;
+					@include media ($small-screen-up) {
+						@include rem(font-size, 28px);
+					}
 
-						@include media ($small-screen-up) {
-							@include rem(font-size, 28px);
-						}
-
-						@include media ($large-screen-up) {
-							@include rem(font-size, 34px);
-						}
+					@include media ($large-screen-up) {
+						@include rem(font-size, 34px);
 					}
 				}
 			}
@@ -62,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // ABOUT US, ESTILO
-.about-us, .estilo, .contact {
+.about-us, .estilo, .contact, .error404 {
 
 	#content {
 
@@ -70,14 +67,11 @@ h1, h2, h3, h4, h5, h6 {
 
 			.slides {
 
-				li {
+				.caption {
 
-					.caption {
-
-						h2 {
-							text-transform: uppercase;
-						}
-    				}
+					h2 {
+						text-transform: uppercase;
+					}
 				}
 			}
 		}
@@ -126,11 +120,15 @@ h1, h2, h3, h4, h5, h6 {
 				.content {
 
 					h1 {
-						@include rem(font-size, 38px);
+						@include rem(font-size, 24px);
 						@include rem(margin, 0 0 15px 0);
 						@include rem(padding, 0 0 15px 0);
 						border-bottom: 1px solid #000000;
 						line-height: 1.2;
+
+						@include media ($medium-screen-up) {
+							@include rem(font-size, 38px);
+						}
 					}
 				}
 
@@ -170,21 +168,34 @@ h1, h2, h3, h4, h5, h6 {
 
 			.slides {
 
-				li {
+				.caption {
+					
+					h2 {
+						@include rem(font-size, 24px);
+						line-height: 1;
+						margin: 0;
+						text-align: right;
+						position: relative;
+						margin-bottom: 20px;
+						padding-bottom: 0px;
 
-					.caption {
-						
-						h2 {
+						@include media($medium-screen-up) {
 							@include rem(font-size, 30px);
-							line-height: 1;
-							margin: 0;
-							text-align: center;
-						    white-space: pre;
-
-						    @include media ($large-screen-up) {
-						    	@include rem(font-size, 44px);
-						    }
 						}
+
+						&:after {
+							content: " ";
+							position: absolute;
+							width: 70px;
+							border-bottom: 2px solid #000;
+							background: transparent;
+							bottom: -10px;
+							right: 0;
+						}
+
+					    @include media ($large-screen-up) {
+					    	@include rem(font-size, 44px);
+					    }
 					}
 				}
 			}
@@ -305,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 					h3 {
 						display: inline-block;
 						margin: 0;
-						border-bottom: 1px solid black;
+						border-bottom: 1px solid $base-font-color;
 						padding-bottom: 3px;
 						font-size: 19px;						
 					}
@@ -348,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
 					h3 {
 						display: inline-block;
 						margin: 0;
-						border-bottom: 1px solid black;
+						border-bottom: 1px solid $base-font-color;
 						padding-bottom: 3px;
 						font-size: 19px;						
 					}
@@ -398,6 +409,23 @@ h1, h2, h3, h4, h5, h6 {
 							}
 						}
 					}
+
+					.date {
+						h3 {
+
+							.entry-date.published {
+
+									text-transform: uppercase;
+									color: $base-font-color;
+									border-bottom: 1px solid $base-font-color;
+									display: inline-block;
+									padding-bottom: 3px;
+									font-size: 19px;
+							}
+						}
+					}
+
+
 				}
 			}
 		}

@@ -21,7 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
-	<div class="shop_intro">
+	<?php if(is_shop()): ?>
+	<div class="intro">
 		<?php 
 		$pageID = get_id_by_slug('shop');
 		$shopPage = get_page( $pageID );
@@ -41,6 +42,7 @@ get_header( 'shop' ); ?>
 			echo $content; ?>
 		</div>
 	</div>
+	<?php endif; ?>
 
 	<?php
 		/**
@@ -48,8 +50,31 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		do_action( 'woocommerce_sidebar' );
+		//do_action( 'woocommerce_sidebar' );
 	?>
+
+	<div id="secondary" class="widget-area" role="complementary">
+		<aside id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
+			<ul class="product-categories">
+
+			<?php
+			$args = array( 'taxonomy' => 'product_cat' );
+			$terms = get_terms('product_cat', $args);
+			if (count($terms) > 0): ?>
+			<?php foreach ($terms as $term): ?>
+				<li class="cat-item cat-item-<?php echo $term->term_id; ?>">
+					<a href="<?php echo get_category_link($term->term_id); ?>" title="View More <?php echo $term->name; ?>"> <?php echo $term->name; ?></a>
+					<p><?php echo $term->description; ?></p>
+				</li>
+			<?php endforeach; ?>
+		    	
+			<?php endif; ?>
+
+			</ul>
+		</aside>
+	</div>
+
+	<h2 class="product_category_title"><?php echo single_cat_title(); ?></h2>
 
 	<?php
 		/**
@@ -81,6 +106,8 @@ get_header( 'shop' ); ?>
 				 * @hooked woocommerce_result_count - 20
 				 * @hooked woocommerce_catalog_ordering - 30
 				 */
+				remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+				remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
 

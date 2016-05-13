@@ -137,7 +137,7 @@ endif;
 				<?php endif; ?>
 				</div>
 				<header>
-					<h3>Inspiration</h3>
+					<h3>In The Shop</h3>
 				</header>
 			</div>
 		</div>	
@@ -148,7 +148,7 @@ endif;
 
 			<div class="inspire">
 				<header>
-					<h3>Inspiration</h3>
+					<h3>In The Shop</h3>
 				</header>
 				<div class="img">
 				<?php
@@ -195,8 +195,8 @@ endif;
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-content">
-		<?php 	the_content(); ?>
+	<div class="entry-content final">
+		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->

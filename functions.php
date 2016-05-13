@@ -123,23 +123,18 @@ function estilo_scripts() {
 	wp_enqueue_style( 'font-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'estilo-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'estilo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-	wp_enqueue_script( 'estilo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	// Global JS calls, Inclueds: SKIP, NAV, PACE, SLICK
+	wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', '', '', true );
 
-	//global JS calls
-	wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', array(), '', true );
-
-	// PACE JS
-	wp_enqueue_script( 'pace', get_template_directory_uri() . '/js/pace.min.js', array(), '', true );
 
 	// INSOIRATION JS
 	if (is_page( 'inspiration' )):
-		wp_enqueue_script( 'inspiration', get_template_directory_uri() . '/js/inspiration.js', array(), '', true );
+		wp_enqueue_script( 'inspiration', get_template_directory_uri() . '/js/inspiration.js', '', '', true );
 	endif; // end check or inmspiration page
 
 	// NEWS JS
 	if (is_page( 'news' )):
-		wp_enqueue_script( 'news', get_template_directory_uri() . '/js/news.js', array(), '', true );
+		wp_enqueue_script( 'news', get_template_directory_uri() . '/js/news.js', '', '', true );
 	endif; // end check or news page
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -166,6 +161,29 @@ function typekit() {
 <?php
 }
 add_action( 'wp_head', 'typekit', 90 );
+
+
+function wc_category_title_archive_products(){
+
+  if(is_product_category()) {
+	
+	$product_cats = wp_get_post_terms( get_the_ID(), 'product_cat' );
+
+	if ( $product_cats && ! is_wp_error ( $product_cats ) ) {
+
+        $single_cat = array_shift( $product_cats ); ?>
+
+        <h2 class="product_category_title"><?php echo $single_cat->name; ?></h2>
+
+	<?php 
+	}
+  }
+}
+//add_action( 'woocommerce_before_main_content', 'wc_category_title_archive_products', 5 );
+
+
+// Display 24 products per page. Goes in functions.php
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
 
 /**
  * Custom options page for this theme.

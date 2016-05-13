@@ -59,6 +59,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "normalize";
 
 /*--------------------------------------------------------------
+## SLICK
+--------------------------------------------------------------*/
+@import "slick/slick";
+@import "slick/slick-theme";
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 @import "typography/typography";

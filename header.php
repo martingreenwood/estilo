@@ -38,7 +38,7 @@
 
 </div>
 
-<div id="page" class="site">
+<div id="page" class="site container">
 
 	<header id="masthead" class="site-header" role="banner">
 	

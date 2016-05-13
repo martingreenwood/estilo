@@ -19,8 +19,8 @@
 
 			<div class="copy">
 				<hr>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.</p>
-				<p>2015 © ESTILO. All rights reserved</p>
+				<p><?php the_field('footer_text', 'option'); ?></p>
+				<p><?php echo date('Y'); ?> © ESTILO. All rights reserved</p>
 			</div>
 
 			<div class="footer-logo">
@@ -36,7 +36,7 @@
 		</div><!-- .site-info -->
 
 		<div id="credit">
-			<p>Designed by <a href="http://www.carneand.co.uk">Carne &amp; Co</a> built by <a href="http://pixelpudu.com">Pixel Pudu</a></p>
+			<p>Design and build / <a target="_blank" href="http://www.carneand.co.uk">Carne &amp; Co</a></p>
 		</div>
 
 	</footer><!-- #colophon -->

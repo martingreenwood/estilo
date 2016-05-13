@@ -11,20 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php $slider_images = get_field('slider_images'); if( $slider_images ): ?>
-	<div id="slider">
-		<ul class="slides">
-		<?php foreach( $slider_images as $slider_image ): ?>
-			<li>
-				<img src="<?php echo $slider_image['sizes']['slide']; ?>" alt="<?php echo $slider_image['title']; ?>" />
-				<div class="caption">
-					<h2><?php echo $slider_image['caption']; ?></h2>
-				</div>
-			</li>
-		<?php endforeach; ?>
-		</ul>
-	</div>
-	<?php endif; ?>
+	<?php get_template_part( 'template-parts/home', 'slider' ); ?>
 
 	<div class="entry-content">
 

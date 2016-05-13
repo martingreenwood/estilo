@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 *
 	 * @hooked wc_print_notices - 10
 	 */
-	 do_action( 'woocommerce_before_single_product' );
+	 //do_action( 'woocommerce_before_single_product' );
 
 	 if ( post_password_required() ) {
 	 	echo get_the_password_form();
@@ -61,7 +61,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 * @hooked woocommerce_template_single_meta - 40
 			 * @hooked woocommerce_template_single_sharing - 50
 			 */
+			remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+			remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+			add_action( 'woocommerce_single_product_summary', 'do_product_desc', 7 );
+
 			do_action( 'woocommerce_single_product_summary' );
+
+			do_action( 'woocommerce_before_single_product' );
 		?>
 
 	</div><!-- .summary -->
@@ -74,6 +80,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * @hooked woocommerce_upsell_display - 15
 		 * @hooked woocommerce_output_related_products - 20
 		 */
+		remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+		remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 		do_action( 'woocommerce_after_single_product_summary' );
 	?>
 
@@ -82,3 +90,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!-- #product-<?php the_ID(); ?> -->
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+

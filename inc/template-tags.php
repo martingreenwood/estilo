@@ -25,7 +25,7 @@ function estilo_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'estilo' ),
+		esc_html_x( ' %s', 'post date', 'estilo' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
@@ -34,7 +34,7 @@ function estilo_posted_on() {
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"></span>'; // WPCS: XSS OK.
 
 }
 endif;
@@ -119,3 +119,23 @@ function estilo_category_transient_flusher() {
 }
 add_action( 'edit_category', 'estilo_category_transient_flusher' );
 add_action( 'save_post',     'estilo_category_transient_flusher' );
+
+
+
+
+/** Display product description the_content */
+function do_product_desc() {
+	global $woocommerce, $post;
+
+	if ( $post->post_content ) : ?>
+		<div itemprop="description">
+
+			<?php $heading = apply_filters('woocommerce_product_description_heading', __('Product Description', 'woocommerce')); ?>
+
+			<!-- <h2><?php echo $heading; ?></h2> -->
+
+			<?php the_content(); ?>
+
+		</div>
+	<?php endif;
+}

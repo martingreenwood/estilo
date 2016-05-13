@@ -1,5 +1,5 @@
 #colophon {
-	@include rem(margin-top, 60px);
+	@include rem(margin-top, 90px);
 
 	@include rem(padding-left, 0);
 
@@ -22,7 +22,7 @@
 			@include span-columns(12);
 
 			@include media ($medium-screen-up) {
-				@include span-columns(4.5);
+				@include span-columns(3.5);
 			}
 			
 			hr {

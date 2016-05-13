@@ -19,13 +19,15 @@
 
 		<div class="tweet">
 			<div class="helper">
-			<?php if ( is_active_sidebar( 'tweets' ) ) : ?>
-				<div id="tweets" class="tweets-sidebar widget-area" role="complementary">
-					<i class="fa fa-twitter"></i>
-					<?php dynamic_sidebar( 'tweets' ); ?>
-				</div><!-- #primary-sidebar -->
-			<?php endif; ?>
-		</div>	
+				<div class="cell">
+				<?php if ( is_active_sidebar( 'tweets' ) ) : ?>
+					<div id="tweets" class="tweets-sidebar widget-area" role="complementary">
+						<i class="fa fa-twitter"></i>
+						<?php dynamic_sidebar( 'tweets' ); ?>
+					</div><!-- #primary-sidebar -->
+				<?php endif; ?>
+				</div>
+			</div>	
 		</div>
 		
 	</div>
@@ -54,8 +56,13 @@
 
 			<div class="copy left">
 
+				
 				<div class="image">
 				<?php echo get_the_post_thumbnail($page->ID, 'full'); ?>
+				</div>
+
+				<div class="date">
+					<h3><?php estilo_posted_on(); //the_date('d M y'); ?></h3>
 				</div>
 
 				<div class="blurb">
@@ -80,8 +87,13 @@
 		
 			<div class="copy">
 
+
 				<div class="image">
 				<?php echo get_the_post_thumbnail($page->ID, 'full'); ?>
+				</div>
+
+				<div class="date">
+					<h3><?php estilo_posted_on(); //echo the_date('d M y'); ?></h3>
 				</div>
 
 				<div class="blurb">
