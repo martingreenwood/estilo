@@ -1189,6 +1189,11 @@
 						margin-top: 0;
 					}
 
+					span#input_1_1_3_container {
+    					padding-right: 0;
+    					@include rem(margin-right, 8px);
+					}
+
 					input, textarea {
 						border: 1px solid black;
 						@include rem(padding, 5px);
@@ -1242,6 +1247,9 @@
 				}
 			}
 		}
+		.gform_wrapper .gfield_required {
+    		color: #D4E7D3;
+    	}
 	}
 }
 
