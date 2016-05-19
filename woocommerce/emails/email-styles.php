@@ -50,8 +50,8 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 }
 
 #template_header {
-    background-color: <?php echo esc_attr( $base ); ?>;
-    color: <?php echo esc_attr( $base_text ); ?>;
+    background-color: <?php echo esc_attr( $base_text ); ?>;
+    color: <?php echo esc_attr( $base ); ?>;
     border-bottom: 0;
     font-weight: bold;
     line-height: 100%;
