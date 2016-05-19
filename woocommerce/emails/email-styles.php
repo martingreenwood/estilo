@@ -111,12 +111,12 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 }
 
 .text {
-    color: <?php echo esc_attr( $text ); ?>;
+    color: black;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 .link {
-    color: <?php echo esc_attr( $base ); ?>;
+    color: black;
 }
 
 #header_wrapper {
@@ -125,14 +125,13 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 }
 
 h1 {
-    color: <?php echo esc_attr( $base ); ?>;
+    color: black;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 30px;
     font-weight: 300;
     line-height: 150%;
     margin: 0;
     text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
-    text-shadow: 0 1px 0 <?php echo esc_attr( $base_lighter_20 ); ?>;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -149,7 +148,7 @@ h2 {
 }
 
 h3 {
-    color: <?php echo esc_attr( $base ); ?>;
+    color: black;
     display: block;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 16px;
@@ -160,7 +159,7 @@ h3 {
 }
 
 a {
-    color: <?php echo esc_attr( $base ); ?>;
+    color: black;
     font-weight: normal;
     text-decoration: underline;
 }
