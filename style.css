@@ -602,6 +602,8 @@ a:hover, a:active { outline: 0; }
 @media screen and (min-width: 1046px) { .page .column { float: left; display: block; margin-right: 2.1276595745%; width: 48.9361702128%; }
   .page .column:last-child { margin-right: 0; } }
 
+.home #content #slider { overflow: hidden; }
+@media screen and (min-width: 680px) { .home #content #slider { overflow: auto; } }
 .home #content #slider .slides .slide img, .home #content #slider li .slide img { outline: none; }
 .home #content #slider .slides .slide .caption, .home #content #slider li .slide .caption { position: absolute; top: 20px; right: 20px; left: auto; bottom: auto; text-align: right; }
 @media screen and (min-width: 680px) { .home #content #slider .slides .slide .caption, .home #content #slider li .slide .caption { top: 50px; right: 50px; } }
