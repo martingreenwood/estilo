@@ -253,7 +253,7 @@
 	}
 
 	.column {
-		@include span-columns(1);
+		@include span-columns(12);
 
 		@include media ($medium-screen-up) {
 			@include span-columns(4.5);

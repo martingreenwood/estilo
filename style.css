@@ -595,7 +595,7 @@ a:hover, a:active { outline: 0; }
 .page #content .entry-content .copy .location .block { margin-bottom: 60px; margin-bottom: 6rem; }
 .page #content .entry-content .copy .location .block:last-child { margin-bottom: 0; }
 .page #content .entry-content .copy .location .block p { font-size: 13px; font-size: 1.3rem; }
-.page .column { float: left; display: block; margin-right: 2.1276595745%; width: 6.3829787234%; }
+.page .column { float: left; display: block; margin-right: 2.1276595745%; width: 100%; }
 .page .column:last-child { margin-right: 0; }
 @media screen and (min-width: 680px) { .page .column { float: left; display: block; margin-right: 2.8571428571%; width: 48.5714285714%; }
   .page .column:last-child { margin-right: 0; } }
