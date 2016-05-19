@@ -1684,6 +1684,10 @@
 
 .woocommerce-checkout {
 
+	#add_payment_method #payment ul.payment_methods li img, .woocommerce-checkout #payment ul.payment_methods li img {
+		display: inline-block;
+	}
+
 	#content {
 		@include rem(margin-top, 120px);
 
