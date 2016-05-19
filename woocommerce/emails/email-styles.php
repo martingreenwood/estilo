@@ -50,8 +50,8 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 }
 
 #template_header {
-    background-color: <?php echo esc_attr( $base_text ); ?>;
-    color: <?php echo esc_attr( $base ); ?>;
+    background-color: white;
+    color: black;
     border-bottom: 0;
     font-weight: bold;
     line-height: 100%;
@@ -137,7 +137,7 @@ h1 {
 }
 
 h2 {
-    color: <?php echo esc_attr( $base ); ?>;
+    color: black;
     text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 25px;
