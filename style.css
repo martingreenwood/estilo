@@ -954,7 +954,7 @@ a:hover, a:active { outline: 0; }
 .woocommerce-account #main { margin-top: 110px; }
 .woocommerce-account #main .entry-content { margin-top: 20px; }
 .woocommerce-account #main .entry-title { font-size: 32px; margin: 0; border-bottom: 1px solid #000000; padding-bottom: 10px; }
-.woocommerce-account #main p.order-info { border-bottom: 1px solid #000000; padding-bottom: 20px; }
+.woocommerce-account #main .order-info { border-bottom: 1px solid #000000; padding-bottom: 20px; }
 .woocommerce-account #main mark, .woocommerce-account #main ins { background: #f9f9f9; text-decoration: none; padding: 5px 10px; }
 
 /*--------------------------------------------------------------
