@@ -1742,3 +1742,35 @@
 		margin-top: 150px;
 	}
 }
+
+
+// ACC
+
+.woocommerce-account {
+	
+	#main {
+		margin-top: 110px;
+
+		.entry-content {
+			margin-top: 20px;
+		}
+
+		.entry-title {
+			font-size: 32px;
+			margin: 0;
+			border-bottom: 1px solid #000000;
+			padding-bottom: 10px;
+		}
+
+		p.order-info {
+			border-bottom: 1px solid #000000;
+			padding-bottom: 20px;
+		}
+		
+		mark, ins {
+			background: #f9f9f9;
+			text-decoration: none;
+			padding: 5px 10px;
+		}
+	}
+}
