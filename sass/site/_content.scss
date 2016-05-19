@@ -1688,6 +1688,13 @@
 		display: inline-block;
 	}
 
+	.payment_box fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+		background: transparent;
+	}
+
 	#content {
 		@include rem(margin-top, 120px);
 
