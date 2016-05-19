@@ -46,6 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <tr>
                                             <td id="header_wrapper">
                                             	<h1><?php echo $email_heading; ?></h1>
+                                                <hr>
                                             </td>
                                         </tr>
                                     </table>

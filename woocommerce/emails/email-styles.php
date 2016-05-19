@@ -63,14 +63,15 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
     position: relative;
 }
 
-#template_header h1:after {
+#template_header hr {
     content: "";
     width: 75px;
     background: black;
     height: 2px;
     position: absolute;
-    left: 0;
-    bottom: -10px;
+    left: 78px;
+    bottom: -20px;
+    border: 0;
 }
 
 #template_footer td {
@@ -84,7 +85,7 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
     font-size:12px;
     line-height:125%;
     text-align:center;
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 30px 78px;
 }
 
 #body_content {
@@ -92,7 +93,7 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 }
 
 #body_content table td {
-    padding: 30px;
+    padding: 30px 30px 30px 78px;
 }
 
 #body_content table td td {
@@ -130,8 +131,9 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 }
 
 #header_wrapper {
-    padding: 30px 30px 0;
+    padding: 30px 30px 0 78px;
     display: block;
+    position: relative;
 }
 
 h1 {
@@ -145,8 +147,6 @@ h1 {
     text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
     -webkit-font-smoothing: antialiased;
 }
-
-h1:after {}
 
 h2 {
     color: black;
