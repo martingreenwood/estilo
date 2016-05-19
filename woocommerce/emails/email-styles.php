@@ -60,7 +60,17 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 }
 
 #template_header h1 {
-    color: <?php echo esc_attr( $base_text ); ?>;
+    position: relative;
+}
+
+#template_header h1:after {
+    content: "";
+    width: 75px;
+    background: black;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
 }
 
 #template_footer td {
@@ -127,13 +137,16 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 h1 {
     color: black;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     line-height: 150%;
     margin: 0;
+    text-transform: uppercase;
     text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
     -webkit-font-smoothing: antialiased;
 }
+
+h1:after {}
 
 h2 {
     color: black;
