@@ -58,8 +58,30 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+// DEFALUT
+.page-template-default {
+
+	#content {
+	
+		.entry-content {
+
+			header {
+
+				h1 {
+					margin: 0;
+					text-transform: uppercase;
+					margin-top: -70px;
+					font-size: 90px;
+					margin-left: -53px;
+				}
+			}
+		}
+	}
+}
+
+
 // ABOUT US, ESTILO
-.about-us, .estilo, .contact, .error404 {
+.page-template-default, .about-us, .estilo, .contact, .error404 {
 
 	#content {
 
