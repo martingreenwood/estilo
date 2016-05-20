@@ -300,7 +300,7 @@ h1, h2, h3, h4, h5, h6 { clear: both; font-weight: 600; }
 @media screen and (min-width: 680px) { .home #content #slider .slides .caption h2 { font-size: 30px; font-size: 3rem; } }
 .home #content #slider .slides .caption h2:after { content: " "; position: absolute; width: 70px; border-bottom: 2px solid #000; background: transparent; bottom: -10px; right: 0; }
 @media screen and (min-width: 1046px) { .home #content #slider .slides .caption h2 { font-size: 44px; font-size: 4.4rem; } }
-.home #content .entry-content header h1 { font-size: 24px; font-size: 2.4rem; padding: 0 0 20px 0; padding: 0 0 2rem 0; margin: 0; }
+.home #content .entry-content header h1 { font-size: 24px; font-size: 2.4rem; padding: 0 0 20px 0; padding: 0 0 2rem 0; text-transform: inherit; margin: 0; }
 .home #content .entry-content header h1:after { content: " "; position: absolute; width: 70px; border-bottom: 2px solid #000; background: transparent; bottom: 0; left: 50%; margin-left: -35px; }
 
 .estilo #content .entry-content .copy .feature .range .product .product_category_title, .estilo #content .entry-content .copy .source .range .product .product_category_title { font-weight: 300; line-height: 2; margin: 0; }
