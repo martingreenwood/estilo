@@ -273,11 +273,6 @@
 		#slider {
 			overflow: hidden;
 
-			@include media ($medium-screen-up) {
-				overflow: auto;
-			}
-
-
 			.slides, li {
 
 				.slide {
