@@ -565,7 +565,7 @@ a:hover, a:active { outline: 0; }
 .intro .text hr { content: " "; position: absolute; width: 70px; border-bottom: 2px solid #000; background: transparent; bottom: 0; left: 50%; margin-left: -35px; position: relative; left: 0; margin-left: 0; }
 .intro .text p { color: #706f6f; }
 
-.slick-prev, .slick-next { display: none !important; }
+.slick-prev, .slick-next { display: none !important; z-index: 1; }
 @media screen and (min-width: 680px) { .slick-prev, .slick-next { display: block !important; } }
 
 .page #content #slider .slides .slide .caption, .page #content #slider li .slide .caption { position: absolute; left: 0; width: 100%; max-width: 700px; margin-left: 0; bottom: -17px; bottom: -1.7rem; }

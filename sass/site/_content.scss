@@ -127,6 +127,7 @@
 
 .slick-prev, .slick-next {
 	display: none !important; 
+	z-index: 1;
 
 	@include media($medium-screen-up){
 		display: block !important;
