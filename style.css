@@ -733,7 +733,7 @@ a:hover, a:active { outline: 0; }
 .inspiration #inspiration-content .row .content .inspire .img { float: left; display: block; margin-right: 4.347826087%; width: 47.8260869565%; }
 .inspiration #inspiration-content .row .content .inspire .img:last-child { margin-right: 0; }
 .inspiration #inspiration-content .row:nth-child(even) .feat-img { float: right; }
-.inspiration #inspiration-content .row:nth-child(even) .content .copy { bottom: 0; text-align: left; padding-bottom: 0; }
+.inspiration #inspiration-content .row:nth-child(even) .content .copy { bottom: 0; text-align: right; padding-bottom: 0; }
 @media screen and (min-width: 1046px) { .inspiration #inspiration-content .row:nth-child(even) .content .copy { position: absolute; text-align: right; } }
 .inspiration #inspiration-content .row:nth-child(even) .content .copy hr { left: auto; right: 0; display: inline-block; }
 .inspiration #inspiration-content .row:nth-child(even) .content .inspire { display: none; position: relative; bottom: auto; }
@@ -919,7 +919,7 @@ a:hover, a:active { outline: 0; }
 .woocommerce .site-content .shop-main #container, .woocommerce .site-content .site-main #container { margin-top: 15px; }
 .woocommerce .site-content .shop-main #container #content .product .summary header, .woocommerce .site-content .site-main #container #content .product .summary header { position: relative; }
 .woocommerce .site-content .shop-main #container #content .product .summary .product_title, .woocommerce .site-content .site-main #container #content .product .summary .product_title { font-weight: 600; font-size: 24px; font-size: 2.4rem; margin-bottom: 15px; margin-bottom: 1.5rem; padding-bottom: 15px; padding-bottom: 1.5rem; line-height: 2.3; position: relative; }
-@media screen and (width: 768px) { .woocommerce .site-content .shop-main #container #content .product .summary .product_title, .woocommerce .site-content .site-main #container #content .product .summary .product_title { text-align: center; margin-left: -108.5%; } }
+@media (min-width: 769px) { .woocommerce .site-content .shop-main #container #content .product .summary .product_title, .woocommerce .site-content .site-main #container #content .product .summary .product_title { text-align: center; margin-left: -108.5%; } }
 .woocommerce .site-content .shop-main #container #content .product .summary hr, .woocommerce .site-content .site-main #container #content .product .summary hr { content: " "; position: absolute; width: 70px; border-bottom: 2px solid #000; background: transparent; bottom: 0; left: 50%; margin-left: -35px; left: 0; margin-left: 0; bottom: -10px; }
 .woocommerce .site-content .shop-main #container #content .product .summary p, .woocommerce .site-content .shop-main #container #content .product .summary .price, .woocommerce .site-content .site-main #container #content .product .summary p, .woocommerce .site-content .site-main #container #content .product .summary .price { color: #706f6f; }
 .woocommerce .site-content .shop-main #container #content .product .summary .price, .woocommerce .site-content .site-main #container #content .product .summary .price { font-weight: 700; }
