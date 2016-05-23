@@ -715,6 +715,7 @@ a:hover, a:active { outline: 0; }
 @media screen and (min-width: 1046px) { .inspiration #inspiration-content .row .content { float: left; display: block; margin-right: 2.1276595745%; width: 48.9361702128%; }
   .inspiration #inspiration-content .row .content:last-child { margin-right: 0; } }
 @media (min-width: 680px) and (max-width: 768px) { .inspiration #inspiration-content .row .content { height: 310px !important; } }
+@media (max-width: 680px) { .inspiration #inspiration-content .row .content { height: auto !important; } }
 .inspiration #inspiration-content .row .content .copy { padding-top: 20px; padding-top: 2rem; }
 @media screen and (min-width: 1046px) { .inspiration #inspiration-content .row .content .copy { padding-top: 30px; padding-top: 3rem; padding-bottom: 30px; padding-bottom: 3rem; } }
 .inspiration #inspiration-content .row .content .copy p { color: #706f6f; }

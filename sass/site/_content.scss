@@ -632,6 +632,10 @@
 				@media (min-width: 680px) and (max-width: 768px) {
 					height: 310px !important;
 				}
+
+				@media (max-width: 680px) {
+					height: auto !important;
+				}
 				
 				.copy {
 					@include rem(padding-top, 20px);
