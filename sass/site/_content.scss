@@ -223,7 +223,7 @@
 
 					@include media ($medium-screen-up) {
 						@include span-columns(4.5);
-						@include rem(padding-top, 110px);
+						@include rem(padding-top, 66px);
 					}
 					
 					@include media ($large-screen-up) {
@@ -1396,7 +1396,7 @@
 						font-size: 13px;
 						color: $base-font-color;
 
-						@include media($medium-screen-up) {
+						@include media($large-screen-up) {
 							display: block;
 						}
 					}

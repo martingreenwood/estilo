@@ -589,7 +589,7 @@ a:hover, a:active { outline: 0; }
   .page #content .entry-content .copy .content:last-child { margin-right: 0; } }
 .page #content .entry-content .copy .location { float: left; display: block; margin-right: 2.1276595745%; width: 100%; padding-top: 20px; padding-top: 2rem; }
 .page #content .entry-content .copy .location:last-child { margin-right: 0; }
-@media screen and (min-width: 680px) { .page #content .entry-content .copy .location { float: left; display: block; margin-right: 2.8571428571%; width: 48.5714285714%; padding-top: 110px; padding-top: 11rem; }
+@media screen and (min-width: 680px) { .page #content .entry-content .copy .location { float: left; display: block; margin-right: 2.8571428571%; width: 48.5714285714%; padding-top: 66px; padding-top: 6.6rem; }
   .page #content .entry-content .copy .location:last-child { margin-right: 0; } }
 @media screen and (min-width: 1046px) { .page #content .entry-content .copy .location { float: left; display: block; margin-right: 2.1276595745%; width: 19.1489361702%; padding-top: 64px; padding-top: 6.4rem; margin-left: 8.5106382979%; }
   .page #content .entry-content .copy .location:last-child { margin-right: 0; } }
@@ -908,7 +908,7 @@ a:hover, a:active { outline: 0; }
 @media screen and (min-width: 680px) { .woocommerce #secondary .widget .product-categories li { width: 22.05%; margin-bottom: 2em; } }
 .woocommerce #secondary .widget .product-categories li a { color: #706f6f; border-bottom: 1px solid #706f6f; display: block; margin-bottom: 5px; padding-bottom: 5px; }
 .woocommerce #secondary .widget .product-categories li p { display: none; text-transform: none; font-size: 13px; color: #706f6f; }
-@media screen and (min-width: 680px) { .woocommerce #secondary .widget .product-categories li p { display: block; } }
+@media screen and (min-width: 1046px) { .woocommerce #secondary .widget .product-categories li p { display: block; } }
 .woocommerce #secondary .widget .product-categories li:nth-child(4n) { margin-right: 0; }
 
 .woocommerce input.button { background-color: transparent; color: #231f20; border-radius: 0; border: 1px solid; transition: all 300ms ease-in-out; }
