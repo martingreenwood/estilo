@@ -1466,7 +1466,7 @@
 								line-height: 2.3;
 								position: relative;
 
-								@include media ($medium-screen-up) {
+								@include media ($ipad-portrait) {
 									text-align: center;
 									margin-left: -108.5%;
 								}

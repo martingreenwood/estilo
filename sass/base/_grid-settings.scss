@@ -17,5 +17,7 @@ $large-screen-up: new-breakpoint(min-width $large-screen 12);
 
 // DEVIICES
 $ipad-ls: 1024px;
+$ipad-pt: 768px;
 
 $ipad-landscape: new-breakpoint(width $ipad-ls 12);
+$ipad-portrait: new-breakpoint(width $ipad-pt 9);
