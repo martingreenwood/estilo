@@ -55,7 +55,7 @@ get_header( 'shop' ); ?>
 
 	<div id="secondary" class="widget-area" role="complementary">
 		<aside id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
-			<ul class="product-categories">
+			<ul class="product-categories clear">
 
 			<?php
 			$args = array( 'taxonomy' => 'product_cat' );

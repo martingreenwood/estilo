@@ -1336,14 +1336,16 @@
 
 				.product {
 
-					width: 100%;
+					@include span-columns(12);
 
 					h3 {
 						font-size: 1.3em;
 					}
 
 					@include media ($medium-screen-up) {
-						width: 46%;
+						@include span-columns(2.25);
+						@include omega(4n);
+						clear: none !important;
 
 						h3 {
 							font-size: 1em;
@@ -1351,7 +1353,8 @@
 					}
 
 					@include media ($large-screen-up) {
-						width: 22.05%;
+						@include span-columns(3);
+						@include omega(4n);
 					}
 
 					.price {
@@ -1377,18 +1380,21 @@
 			.product-categories {
 
 				li {
-					float: left;
-					margin: 0 3.8% 1em 0;
-					padding: 0;
-					position: relative;
-					width: 100%;
+					@include span-columns(12);
+
 					@include rem(padding-bottom, 10px);
 					text-transform: uppercase;
 					font-weight: 500;
 
 					@include media ($medium-screen-up) {
-						width: 22.05%;
+						@include span-columns(2.25);
+						@include omega(4n);
+
 						margin-bottom: 2em;
+					}
+
+					@include media ($large-screen-up) {
+						@include span-columns(3);
 					}
 
 					a {
